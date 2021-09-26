@@ -1,0 +1,2 @@
+# blockads
+dùng cho adguard
