@@ -1,0 +1,1223 @@
+||stat.appsgeyser.com^$app=com.wKiemtien24h_12568911
+||appsflyer.com^$app=com.popsworldwide.popsapp
+||register.appsflyer.com^$app=com.popsworldwide.popsapp
+||moatads.com^$app=com.popsworldwide.popsapp
+||ad.atdmt.com^$app=com.popsworldwide.popsapp
+||tps.doubleverify.com^$app=com.popsworldwide.popsapp
+||s-usc1c-nss-214.firebaseio.com^$app=com.popsworldwide.popsapp
+||pops-app-mobile.firebaseio.com^$app=com.popsworldwide.popsapp
+||z.moatads.com^$app=com.popsworldwide.popsapp
+||heapanalytics.com^$app=com.popsworldwide.popsapp
+||graph.facebook.com^$app=com.popsworldwide.popsapp
+truyentranhlh.net##.force-top.bt-fixed.d-md-none
+! ==[ Kết thúc bộ lọc nhanh ]==
+! Rules created by Phan Nhanh
+! Thanks To Adguard Forum for database 
+! Bộ lọc dành cho người cao tuổi và những người không rành về Internet
+! Please do not modify these rules
+
+! Chặn thuộc tính _bank https://forum.adguard.com/index.php?threads/remove-target-_blank-attributes-with-script.30317/
+#%#AG_onLoad(function() { Array.from(document.querySelectorAll('a[target="_blank"]')) .forEach(link => link.removeAttribute('target')); });
+! Chặn Web RCT https://forum.adguard.com/index.php?threads/block-webrtc-ip-address-leaks.5293/
+#%#window.webkitRTCPeerConnection = undefined; window.mozRTCPeerConnection = undefined; navigator.mozGetUserMedia = undefined; navigator.webkitGetUserMedia = undefined; window.MediaStreamTrack = undefined; window.AudioContext = undefined; window.webkitAudioContext = undefined; window.RTCPeerConnection = function() {};
+! Chặn toàn bộ kết quả tìm kiếm google khớp với url
+! google.com#?#div[data-hveid]:has(> div > div > a[href*="xnxx.com"])
+! google.com#?#div[jscontroller]:has(> a[href*="xnxx.com"])
+google.com##div[role="main"] > div#search  div[data-async-context] > div > div > div.srg > div:contains(/xvideos.com|xnxx.com|javhd.pro/)
+! Bộ lọc chung
+.ad.
+.admicro.
+.adxxx.
+.ads.
+.adnxs.
+.adpia.
+.ad-stir.
+.adsymptotic.
+.adsupply.
+.adpay.
+.mopub.
+.contentabc.
+.isboost.
+.sonobi.
+.trafficjunky.
+.taboola.
+. tynt.
+.gsspat.
+.genieesspv.
+.zemanta.
+.lavanetwork.net
+.lijit.
+.juicyads.
+.jads.co
+/ads_codes/
+/adserver.$script
+/ads-iframe-display.php
+/advertisers.$script
+/atatus.js
+*/ad1.xml$xhr
+/banner/static/template/iframe.html
+/vast.$script,domain=~animet.net|~nhaccuatui.com
+||bebi.com^$domain=~anime47.com|~anime47.org
+.criteo.
+.peer5.com
+.adskeeper.
+##.ad-widget
+##.ad-content
+##.widget-ad
+##.adsbygoogle
+###ads300-1
+###ads300-2
+###ads300-3
+###ads300-4
+###ads300-5
+##.a_d_s_250
+###aswift_1
+###aswift_2
+###aswift_3
+###aswift_4
+###aswift_5
+###aswift_6
+###aswift_7
+###adsense_header
+##.ads-center
+##.adv_right_banner
+##.adContainer
+###adsense_header
+###adsense_center
+###adsense_insert
+###adsense_footer
+###adSpot
+##adSpot
+##.adslot_970x90.adsbygoogle
+##.ad-center-980
+##.adslot_S1.adsbygoogle
+###ads-single
+##.ads_player.Ads
+###ads_mobile
+###catfish1
+###content > .ads_placement
+###divExoLayerWrapper
+##div#adsense_insert
+##.masonry
+##.mobile-ads-content
+##.bvptgtvmgadt8c.bvptgtvmgadt8w
+##.plaeigem3xg
+###page_ads_right
+###onesignal-popover-dialog
+###onesignal-popover-container
+###gdpr-cookie-consent
+##.glx-teaser
+! QC Banner
+##.ad-topbanner
+##.bottom-ad
+###banner-zone-35
+##.banner-top
+##.banner-inner > .adsbygoogle
+##.content_popup_banner
+###content_catfish_mobile
+###cover-iframe-banner35
+##.banner, .qc
+##.exo_wrapper
+###float_content
+##.float-ck
+##.mb-margin
+###rmcard1
+##div[class^="apreload-"]
+##div[class^="afixed-"]
+##div[class^="abanner-"]
+##div[class^="aballon-"]
+##[href^="https://adnetwork.adasiaholdings.com/click"]
+##[href^="https://c.bebi.com/"]
+##[href^="http://11bet.com/vn"]
+##[href^="http://www.scv988.com/partner"]
+##[href^="http://m.8live.com/lng/vn/"]
+##[href^="https://bx59.app.link/"]
+##[href^="http://bit.ly/"]
+##[href^="https://m.five88.com/register.aspx"]
+##[href^="https://one88.vn/vi/khuyen-mai.aspx"]
+##[href^="https://goo.gl/"]
+##[href^="http://ads.trafficjunky.net/"]
+##[href^="javsex.net/ads/"]
+##[href^="imgdrive.net/ea/"]
+##[href^="go.onelink.me/"]
+##[src="https://imgdrive.net/xyz-medium.html"]
+##[href^="http://www.simdepdongnai.com"]
+##[href^="https://www.fshare.vn/partnerlink"]
+##[href^="https://main.exosrv.com/img-click.php"]
+##a[href^="https://m.8live.com/lng/vn/"]
+##a[href^="https://11bet.net/"]
+##[href^="http://bong90.com/"]
+##[href^="https://smart.8live.net/lng/vn/"]
+##[src="//asc.quantrimang.com/data/File/2018/03/Adstext-meta.htm"]
+###preload_banner
+##.pre-mb.preload-11bet.preload
+###popupDiv
+###page_ads_right
+###topbanner
+! Overlay Block Touch  ADS
+###popup-background
+###popup-giua-man-hinh
+###movie_detail_video_overlay_ad
+##[id='kamujahat']
+! Anti-Ablock Killer [ Beta ]
+cdn.jsdelivr.net^*/arlinablock.js
+||1431218181.rsc.cdn77.org^$script
+||antiadblocksystems.com^
+​*/js/wutime_adblock/*
+#%#(function(b){Object.defineProperty(Element.prototype,"innerHTML",{get:function(){return b.get.call(this)},set:function(a){/^(?:<([abisuq]) id="[^"]*"><\/\1>)*$/.test(a)||b.set.call(this,a)},enumerable:!0,configurable:!0})})(Object.getOwnPropertyDescriptor(Element.prototype,"innerHTML"));
+! Tất cả các trang xem phim và  anime phổ biến tại Việt Nam
+anivn.com###simsodep
+||m.anivn.com/theme/animevn/images/bg.gif$image
+anivn.com##.fb-like-box, .fb_iframe_widget
+! AnimeTVN
+||animetvn.tv/ads
+animetvn.tv##.home-ads
+animetvn.tv###ads-left > div > a
+!animetvn.tv##.gnarty-offads
+animetvn.tv###menubentrai
+animetvn.tv##.thongbao20
+||player.animetvn.tv$mp4
+animevsub.tv##.Dvr-300
+@@||animevsub.tv###Tp-Wp > footer.Footer:nth-child(3) > div.Container
+animetvn.tv###popup-background
+! Animet.net
+animet.net###ins-overlay
+animet.net###inx-overlay
+! Share nhớ xóa
+animet.net###ins-content
+animet.net##.sticky_bottom
+animet.net###Tp-Wp > .gnarty-offads
+animet.net##div.gnarty-offads:nth-of-type(1)
+animet.net##.ads_player.Ads.Wdgt
+! Ani4u
+ani4u.org##.quang_cao_s_right
+ani4u.org##.footer_two
+ani4u.org##.quang_cao_play
+! Animehay
+###ah-footer
+animehay.tv##.floating-banner-left
+animehay.tv##.floating-banner-right
+animehay.tv###adtrue_tag_8925
+! Animevsub
+##.Ads, .ads_player
+animevsub.tv##.announcement
+animevsub.tv##.top-message
+animevsub.tv##.sticky_bottom
+animevsub.tv##.button_sticky_bottom
+! Anime47
+@@||master.anime47.com^$generichide,important
+@@||slave6.anime47.com
+@@||slave6.123phim.vip
+@@||slave5.anime47.com
+@@||slave4.anime47.com
+@@||slave3.123phim.vip
+@@||123phim.top^$generichide,important
+@@/public/dist/index.html?id=*
+@@||anime47.com^$generichide,important
+@@/instream/video/client.js
+anime47.com###.ad-top-300-250
+anime47.com##ad-container
+anime47.com###sv3
+anime47.com##center > .ad-top-300-250.ad-container
+anime47.com###notie-overlay
+anime47.com##div:nth-of-type(8)
+anime47.com##.notie-background-error.notie-element-half.notie-button
+anime47.com##.bx_wrapper_redwallet
+anime47.com##.bx_wrapper_tikredrain
+anime47.com^$popup
+anime47.com##.advertisement
+anime47.com###advertisement__catfish
+anime47.com###qc_clgt
+||img.anime47.com/imgur/*.gif
+! Vui Ghê
+vuighe.net##section.news.tray:nth-of-type(2)
+! Zing TV
+m.tv.zing.vn##.note
+||adtimaserver.vn
+||adexp.liftoff.io^
+@@||vnsfs.net^$document
+||token.rubiconproject.com^
+||impression-asia.liftoff.io^
+! Anime1s
+anime1s.net##.relativeMovie.col-xl-4.col-lg-4.col-12
+! Danet
+danet.vn##div.container-fluid.rail-container:nth-of-type(21) > .row > .col-xs-12 > .spinner
+!Động Phim
+dongphim.net,dongphim.pro,dongphym.com###preloader
+dongphim.net,dongphim.pro,dongphym.com###ads-container-5d46e6e0ecedd
+##sda-wrapper
+##sda-banner-header
+||dongphim.net,dongphim.pro,dongphym.com^$mp4
+dongphim.net,dongphim.pro,dongphym.com###article-5f825e0763a36
+||static.dongphim.net
+! Phimmoi
+div[class="ad-300"]
+phimmoi.net,phimmoizz.net,phimmoizz.net##.fb-like, .like-at-rating, .fb_iframe_widget
+##.clearfix.footer-bottom
+game4v.com##.content > div:nth-of-type(1)
+www.phimmoi.net,phimmoizz.net##.movie-info > div:nth-of-type(2)
+www.phimmoi.net,phimmoizz.net##.ad-top-comment
+www.phimmoi.net,phimmoizz.net###ad-exchange-ants
+www.phimmoi.net,phimmoizz.net##.block-note.page-single.block-wrapper
+www.phimmoi.net,phimmoizz.net##.block-tags
+www.phimmoi.net,phimmoizz.net###uniad-balloon-wrapper
+www.phimmoi.net,phimmoizz.net###uniad-zone-2
+www.phimmoi.net,phimmoizz.net###uniad-zone-3
+www.phimmoi.net,phimmoizz.net###uniad-zone-4
+www.phimmoi.net,phimmoizz.net###uniad-zone-4 > .uniad-link[href^="//uniad.phimmoi.net,phimmoizz.net"]
+www.phimmoi.net,phimmoizz.net###uniad-zone-119 > .uniad-link
+www.phimmoi.net,phimmoizz.net###uniad-zone-122
+www.phimmoi.net,phimmoizz.net###uniad-zone-11
+www.phimmoi.net,phimmoizz.net###uniad-zone-87
+phimmoi.net,phimmoizz.net##.uniad-zonetype-mobilebottom.uniad-flash-wraper.uniad-ad-wraper
+www.phimmoi.net,phimmoizz.net###admicro-backup-watch1
+www.phimmoi.net,phimmoizz.net###ns-ad-masthead
+www.phimmoi.net,phimmoizz.net###bs-lead-banner
+www.phimmoi.net,phimmoizz.net###sidebar > .ad-top-300-250 .ad-container:nth-of-type(3)
+www.phimmoi.net,phimmoizz.net##.ad-after-comment
+||uniad.phimmoi.net,phimmoizz.net/data/banner/*.gif
+||uniadcdn.phimmoi.net,phimmoizz.net
+phimmoizz.net##.col-lg-8 > .ad-topcomment-pc
+||*w*.net/*.gif$domain=phimmoizz.net
+! Yêu Phim Mới
+yeuphimmoi.com###custom_html-4
+yeuphimmoi.com###custom_html-7
+yeuphimmoi.com##.cash-fish
+! Vivuphimmoi
+vivuphimmoi.com##.anbanner
+vivuphimmoi.com##.code-block-2.code-block > div:nth-of-type(2)
+vivuphimmoi.com##.code-block-4.code-block
+vivuphimmoi.com##.code-block-18.code-block > div
+vivuphimmoi.com###mobileCatfish
+! Bilutv
+bilutv.org##.content
+bilutv.org##body > div:nth-of-type(5)
+bilutv.org###glx-13578-container
+bilutv.org###glx-13460-container
+bilutv.org^$popup
+! Biphim
+biphim.tv###ad_pc_bottom_float2
+! Khoai.tv
+khoai.tv##.alert-warning.alert
+khoai.tv##.like-share
+khoai.tv##div.bigblock:nth-of-type(10) > .container
+khoai.tv##.col-xs-12.info
+khoai.tv##.ads-balloon-mobile > div
+khoai.tv##.ads-fix-bottom
+khoai.tv##.group-detail > .quangcao
+! Mọt Phim
+motphim.com##body > div:nth-of-type(1)
+motphim#@###mad-player
+! Net Phim
+netphim.tv###preload0
+netphim.tv###preload2
+netphim.tv###catfishAds1
+netphim.tv###catfishAds2
+netphim.tv###catfishAds3
+!
+xemphimplus.net/banner/*.gif
+xemphimplus.net##.the_tag_list
+khophimle.com$^popup
+xemphimso.com##.ads
+||ad.vkool.net
+||ads.vkool.info^$mp4
+||vphim.net##.notification
+phim14.net##.float-ck
+ahihi.tv###lightbox-player
+ahihi.tv###catfish_8live
+||topphimhd.com^$popup
+||topphimhd.com/ads/*.gif
+topphimhd.com###fixed_bottom
+||api.topphimhd.info^$mp4
+! Server phim
+! Video Ads
+|fembed.com^$popup
+||vast.youview.io
+||vast.adsubon.com
+||adsubon.com^$empty
+||ackcdn.net^$empty
+||cdn.cloudfrale.com/Managed/*.mp4
+||i.rmbl.ws^$media,domain=hentaiz.net
+||static.vodcdn.xyz/images/vid/*.mp4
+!Fembed Spam 
+||hubbabu2bb8anys09.com^$empty
+||nbf9b5aurl.com
+||socialbars-web5.com
+||socialbars-web2.com
+||ulukaris.com
+||derevya2sh8ka09.com
+||teenyreligious.com
+||cdn.cloudimagesb.com
+||awaitcola.com
+||payingnoodlescam.com
+||navigabledisorganized.com
+||cdn.betgorebysson.club
+||implementedinstalled.com
+! Các Site chuyên về ART/ảnh Anime phổ biến
+pixiv.net##.bg-c-gray-00.pb-24.ph-16.description-signup-header
+pixiv.net##.premium-lead
+pixiv.net##.premium-lead-t-footer
+pixiv.net##.t_footer.ad-frame-container
+pixiv.net##.t_pager_super.ad-frame-container
+! Các trang đọc truyện tranh phổ biến tại việt nam
+! Blog Truyen
+blogtruyen.vn##.qc-inner
+blogtruyen.vn###qc_M_Home_4_Detail
+blogtruyen.vn##.manga-detail > center
+blogtruyen.vn##center:nth-of-type(2)
+! Note: Deleted if Share Public
+blogtruyen.vn###qc_M_Home_8
+! End Note
+blogtruyen.com###banner
+div[class="advertise_pnl"]
+div[class$="dmp_VideoView-ad-slot"]
+blogtruyen.com###wrapper > section.main-content:nth-child(7) > div.row > div.col-md-4.sidebar.ui-sortable:last-child > iframe:nth-child(2)
+blogtruyen.com###wrapper > section.main-content:nth-child(8) > div.row > div.col-md-4.sidebar.ui-sortable:last-child > iframe:nth-child(2)
+! Comicvn
+comicvn.net##.displaya-corner-left, .image-plus, .ber-plus
+! Nettruyen
+@@| | imageinstant.net
+nettruyen.com^$urlblock
+truyenchon.com,nettruyen.com##a.home:nth-of-type(1)
+nettruyen.com##a.visible.glx-teaser
+nettruyen.com###back-to-top
+nettruyen.com##.changeserver.home
+nettruyen.com##.notify_block
+nettruyen.com###ads-sourcetobin-300-250
+nettruyen.com##body > iframe
+nettruyen.com##.box_doc.reading-detail > .mrb5.mrt5.text-center
+nettruyen.com##.text-center.container
+nettruyen.com##.mrb5.mrt0.mgid-under-article.mgid-980x110.
+||s.truyenchon.com/data/sites/1/banner/*.gif
+||s.nettruyen.com/data/sites/1/banner/*.gif
+nettruyen.net##div.container:nth-of-type(4) > div.mrb5.mrt5.text-center:nth-of-type(1)
+nettruyen.net##div.container > div.mrb5.mrt5.text-center
+truyenchon.com##.mrb5.mrt0.mgid-980x110.mgid
+truyenchon.com##.btn-success.btn.follow-link
+nettruyen.com##.taboola.mrt15
+https://comi.mobi/nettruyen-banner/$domain=nettruyen.com
+nettruyen.com###ads-adtrue-300-250
+##[src^="https://www.facebook.com/v2.9/plugins/like.php?action=like&app_id=745819368841087&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fj-GHT1gpo6-.js%3Fversion%3D43%23cb%3Df35dba0db4bf66e%26domain%3Dwww.nettruyen.com%26origin%3Dhttp%253"]
+nettruyen.com##.footer
+nettruyen.com#₫#ct100_divCenter > .reading > .container:nth-of-type(1) > .top > .facebook-like
+nettruyen.com###ads-bidgear-300-250
+nettruyen.net##div.container > div.mrb5.mrt5.text-center
+! hocvientruyentranh
+##.quang-cao-dau-trang
+hocvientruyentranh.com##[href="javascript:TatAd('float_top_mobile')"]
+! Ham Truyen
+hamtruyen.com###topbanner
+hamtruyen.com###preload_banner
+hamtruyen.com##div.text-center:nth-of-type(5)
+hamtruyen.com###wrapp_content_mc > div.col-md-4.wrapper_qc:last-child > div:nth-child(9) > iframe
+hamtruyen.com##.footer, .row
+hamtruyen.com##div.text-center:nth-of-type(7)
+||hamtruyen.com^$popup
+! TruyenFull
+truyenfull.net###ads-chapter-longtop
+truyenfull.net###ads-chapter-top
+! Truyen Tranh
+truyentranh.net##.col-xs-12
+truyentranh.net##.SocialFloating, .LeftBanner, .hidden-xs, .hidden-sm
+truyentranh.net###fshare-banner
+truyentranh.net##.col-md-12, .col-sm-12
+truyentranh.net##section.bodycontainer:nth-child(8) > div.container.bgposition-relative > div.row:last-child > div.col-md-4:last-child
+! Truyện QQ
+truyenqq.com###ads_mobile
+truyenqq.com##.mobile-banner
+truyenqq.com###left-banner > .left-banner
+truyenqq.com##div.outsite:nth-child(2) > div:nth-child(2)
+truyenqq.com##.block > div:nth-of-type(5)
+truyenqq.com###content > div.container.content > div.row > div.col-md-3.col-sm-3.col-xs-12.side_layout:nth-child(2) > div.ind_side > div.side_gr > div
+truyenqq.net##div.outsite:nth-child(5) > div.mobile-banner:nth-child(6) truyenqq.net##div.outsite:nth-child(5) > section.main-content:nth-child(7) > div.container.has-background-white.story-detail > div:nth-child(5)
+##.outsite > div:nth-of-type(2)
+##[href^="http://11bet.com/vn"]
+##.col-sm-offset-0.col-sm-12.col-xs-offset-0.col-xs-12.col-md-offset-1.col-md-8 > .row
+##[src="/qc/320x50-sun.gif"]
+truyenqq.com/qc-new/^
+! TT8 - bây giờ là iutruyentranh
+truyentranhtam.com,truyentranh869.com###btnShop
+truyentranhtam.com,truyentranh869.com##.embed-responsive-item
+iutruyentranh.com##.embed-responsive-16by9.embed-responsive
+iutruyentranh.com##.tt8quangcao.hideTablet.float-ck
+iutruyentranh.com##div.btop-blue.btop:nth-of-type(2)
+! Cũng là truyentranh8 luôn ( đổi nhiều quá mệt r nha :v )
+truyentranhtam.com,truyentranh869.com###mask
+truyentranhtam.com,truyentranh869.com##dialog
+truyentranhtam.com,truyentranh869.com##.container > .main-page.row > .col-md-4 > .embed-responsive-16y9.embed-responsive
+truyentranhtam.com,truyentranh869.com##body > .tt8-quangcao
+truyentranhtam.com,truyentranh869.com##a.text-center.center-block:nth-of-type(3)
+truyentranhtam.com,truyentranh869.com###boxes
+truyentranhtam.com,truyentranh869.com###quangcaoCatFish
+!Thich truyen tranh
+||thichtruyentranh.com/images/ads/ads_mm.html
+||thichtruyentranh.com/images/ads/ads_m.html
+thichtruyentranh.com##.divtab_list > div:nth-of-type(5)
+thichtruyentranh.com#ad_root
+thichtruyentranh.com#text_ads
+thichtruyentranh.com##.divtab_list > center:nth-of-type(1)
+thichtruyentranh.com##.divtab_list > center:nth-of-type(2)
+!Mê Đọc Truyện
+medoctruyen.com##.appGuidingDownload
+medoctruyen.com##.ads > .ads_banner
+medoctruyen.com##.homepageCon > .reward
+! các trang đọc truyện khác
+truyentranhhot.net##.idTopChapter
+truyensieuhay.com^$popuo
+! Diễn đàn
+! tui cũng đâu muốn chặn gocmod đâu tại ông bơ post tui up nhiều quá nên chặn chơi cho bỏ ghét :)))
+gocmod.com##div.inline-ad:nth-of-type(2)
+gocmod.com##div.inline-ad:nth-of-type(5)
+gocmod.com##div.inline-ad:nth-of-type(8) > .adsbygoogle
+gocmod.com##div.inline-ad:nth-of-type(11)
+gocmod.com##div.inline-ad:nth-of-type(14)
+gocmod.com###FeaturedPost1
+gocmod.com###Followers1
+gocmod.com###HTML6
+||links.apksvip.com/js/ads.js$domain=links.apksvip.com
+forum.gocmod.com##.p-body-inner > ins.adsbygoogle:nth-of-type(1)
+forum.gocmod.com##.p-body-inner > ins.adsbygoogle:nth-of-type(2)
+forum.gocmod.com##.pedestal_container.google-auto-placed
+vn-zoom.com###contentMain > div.bodyWrapper > div.body_wrapper:nth-child(2) > table:nth-child(11) > tbody > tr > td:last-child
+dongnaigsm.vn###content > div.pageWidth > div.pageContent > aside:nth-child(6) > div.sidebar > div.section.widgets-c74d9:last-child
+@@||diendanit.net/js/siropu/am/ads.min.js?_v=0653a7f7
+diendanit.net###g207
+android.vn###forumFooter > div.footer-links:first-child > div.pageWidth > div.pageContent
+techrum.vn###content > div.pageWidth > div.pageContent > aside:nth-child(2) > div.sidebar > div.section.widget-single:nth-child(6)
+techrum.vn##.k_ads_vip_2
+! BlackMod
+blackmod.net##.fade-up.style2.wrapper
+blackmod.net##.lbContainer.block-container > div:nth-of-type(1)
+blackmod.net###footer-list-banners
+! Đúng như tên gọi đồ trời ơi đất hỡi gắn quảng cáo lắm vl cho zero lun :)
+diendan.trentroiduoidat.com###divadleft
+diendan.trentroiduoidat.com###divadright
+diendan.trentroiduoidat.com##.mainContent > div:nth-of-type(1)
+diendan.trentroiduoidat.com##.mainContent > div:nth-of-type(2)
+diendan.trentroiduoidat.com##.mainContent > div:nth-of-type(5)
+diendan.trentroiduoidat.com##.mainContent > div:nth-of-type(8)
+diendan.trentroiduoidat.com##div.widget-container.widget-group-no-name.section:nth-of-type(1)
+diendan.trentroiduoidat.com##div:nth-of-type(10)
+diendan.trentroiduoidat.com##.sidebar > div.widget-container.widget-group-no-name.section:nth-of-type(2)
+diendan.trentroiduoidat.com##font > div.widget-container.widget-group-no-name.section:nth-of-type(3)
+diendan.trentroiduoidat.com###widget-5
+diendan.trentroiduoidat.com##.pageContent > font > font > div:nth-of-type(2)
+diendan.trentroiduoidat.com#@##.sectionMain.section.discussionList
+diendan.trentroiduoidat.com##footer
+! Các trang rút gọn link kiếm tiền
+megaurl.in,expertvn.com##.nrbud
+megaurl.in,expertvn.com##.text-left
+megaurl.in,expertvn.com##[href="https://downfile.site"]
+megaurl.in,expertvn.com##.content-blocker-iframe
+megaurl.in,expertvn.com###rn_ad_native_ymgni
+megaurl.in,expertvn.com##.mn-thumbnails_label-under.mn-thumbnails_col-3.mn-outer
+megaurl.in,expertvn.com^$popup
+megaurl.in,expertvn.com##.text-content
+
+123link.biz,123link.pro,123link.pw##.text-left
+123link.co,123link.pw##.dark.ads-block-warning
+123link.biz##.dark.i-said-no-thing-can-stop-me-warning
+123link.pw##.text-left > .banner-captcha.banner
+1slink.com##.banner, .banner-captcha
+ouo.press##.text-center > div
+ouo.press##.it-client-17-iframe
+ouo.press##.about
+ouo.press##.blog-post
+ouo.press##.content > div:nth-of-type(2)
+ouo.press##[href] > [src]
+ouo.press^$popup
+olalink.org##div.banner-img-promotion
+tmearn.com^$popup
+tmearn.com##.text-left
+tmearn.com##.container > .row > .col-md-offset-1.col-md-10 > .box-main > .banner-captcha.banner > .banner-inne
+tmearn.com##.container > .row > .col-md-offset-1.col-md-10 > .box-main > iframe
+tiny.do###p_2848809
+tiny.do###frame
+uploading.vn##.mb-4.col-md-4
+uploading.vn##.mb-4.col-md-8 > .mb-4.ads
+!Gplinks ( lịt moẹ cái link loz bố chiến với mày đến cùng )
+||gplinks.in/img/home.jpg
+##[href="https://www.youtube.com/channel/UCSFqE8fdgZysdG_jJyvP0Mw"]
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com,tapynews.com###cookie-pop
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com,tapynews.com##center > p:nth-of-type(1)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##center > p:nth-of-type(2)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##center > p:nth-of-type(3)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##center > p:nth-of-type(4)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##center > p:nth-of-type(5)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##center > p:nth-of-type(6)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##center > p:nth-of-type(7)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##center > p:nth-of-type(8)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##center > p:nth-of-type(9)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##center > p:nth-of-type(10)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(1)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(2)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(3)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(4)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(5)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(6)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(7)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(8)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(9)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(10)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(11)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(12)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(13)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(14)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(15)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(16)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(17)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(18)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(19)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(20)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##p:nth-of-type(21)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##h2:nth-of-type(1)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##h2:nth-of-type(2)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##h2:nth-of-type(3)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##h2:nth-of-type(4)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##h2:nth-of-type(5)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##h3:nth-of-type(1)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##ul:nth-of-type(1) > li:nth-of-type(1)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##ul:nth-of-type(1) > li:nth-of-type(2)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##ul:nth-of-type(1) > li:nth-of-type(3)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##ul:nth-of-type(2) > li:nth-of-type(1)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##ul:nth-of-type(2) > li:nth-of-type(2)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##ul:nth-of-type(2) > li:nth-of-type(3)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##ul:nth-of-type(3) > li:nth-of-type(1)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##ul:nth-of-type(3) > li:nth-of-type(2)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##ul:nth-of-type(3) > li:nth-of-type(3)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com##ul:nth-of-type(3)
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com###cookie-pop
+taaffy.com,eduhelio.com,foxreward.com,tapynews.com#$#html > body { background: #000000!important; }
+||taaffy.com,eduhelio.com,foxreward.com,tapynews.com/*ads.js
+! End Gplinks
+! link-to.net - skip timer
+linkvertise.com,link-to.net#%#!function(){if(-1<window.location.href.indexOf("dynamic?r=")){var a=location.href.split("?r=");if(a&&a[1])try{window.location=atob(a[1])}catch(b){}}}();
+link-to.net#%#AG_onLoad(function(){if(window.location.href.match(/https?:\/\/link-to\.net\/\d+\//)){var a=document.body.textContent.match(/window\.location\.href = \("([\s\S]*?)"\);/);if(a&&a[1])location=a[1];}});
+!
+linkpro.pw###MarketGidComposite736270_1606b
+linkpro.pw##center:nth-of-type(2)
+linkpro.pw###adm-container-705
+linkpro.pw###adm-container-704
+linkpro.pw###frame
+files.pw##.regcontentdown.regcontent > div.row:nth-of-type(1)
+files.pw##div.row:nth-of-type(4)
+files.pw##div.row:nth-of-type(3) > div.col-sm-4:nth-of-type(3)
+files.pw##div.row:nth-of-type(3) > div.col-sm-4:nth-of-type(1)
+shortenlink.vip#%#//scriptlet("prevent-addEventListener", "/load|error/", ".head.removeChild(")
+shortenlink.vip#%#AG_abortInlineScript(/googlefc/, 'atob');
+!  Các Trang Khác
+top10tphcm.com##.contact_for_ads_right
+kenh14.vn##.khw-ads-wrapper
+||www.lyrical-nonsense.com##center > .ezo_ad.ezoic-floating-bottom.ezmob-footer
+taimienphi.vn###cph1_ga3
+m.nhaccuatui.com##.bannerAdv
+123doc.org##.fb-comments, .fb_iframe_widget, .fb_iframe_widget_fluid_desktop
+chiemtaimobile.vn##.fb_customer_chat_bounce_in_v2
+! Các Host Đăng & Lưu Trữ Files
+dl-android.com##.col-xs-12.col-lg-6.col-lg-offset-3 > center
+dl-android.com##center
+dl-android.com###container-8b56096956a4f7141d37c866efaf0511
+downmienphi.com###index_middle > div.container.dad > div.mainContainer:nth-child(3) > div.mainContent > div.sidebar.widgetContainer.aboveWidgets.noFloats:nth-child(2) > center:nth-child(8)
+downmienphi.com###index_middle > div.container.dad > div.mainContainer:nth-child(3) > div.mainContent > div.sidebar.widgetContainer.aboveWidgets.noFloats:nth-child(2) > a:nth-child(6)
+downmienphi.com##.sharebox
+downmienphi.net##.mt-4.col-md-8
+downmienphi.net##.ads-top.mb-4.mt-5.col-md-12
+downmienphi.net##body > div:nth-of-type(5)
+downmienphi.net##.alert-warning.alert
+||downmienphi.net/ads/*.gif
+||@@yoyo.dropgalaxy.com
+www.mediafire.com###div-gpt-ad-1575674121640-0
+www.mediafire.com##[id='adwrapper']
+www.mediafire.com##.m-ad-bottom
+www.mediafire.com##m-ad1
+www.mediafire.com##m-ad2
+www.mediafire.com##.DLMobile-upsellBox
+www.mediafire.com##subFooterWrap
+apk4free.net##.code-block-5.code-block > center
+a2zapk.com##div.ArticleLand:nth-of-type(3) > b
+a2zapk.com$^popup
+userscould.com###glx-10345-container
+uploadrar.com##.vticker > ul > li:nth-of-type(1)
+uploadrar.com##.icofont-zipped
+uploadrar.com##div.download0page:nth-of-type(1) > .blockpage
+uploadrar.com##.txt > .banner4
+uploadrar.com###lastnews
+uploadrar.com##.btn-lg.btn-success.btn
+uploadrar.com##.sharefile
+uploadrar.com###gdpr-cookie-notice
+##[src="http://www.uploadbank.com/images/bravebanner.png"]
+uploadbank.com##center:nth-of-type(3)
+||apkhost.co^$popup
+apkhosts.co##div.sec.lft:nth-of-type(4)
+apkhost.co#div[class="paybox"]
+apkhost.co###lkaig
+apkhost.co##[src="about:blank"]
+apkhost.co###Prem_days
+# Uploadking cũng là Apkhosts
+||uploadking.net^$popup
+uploadking.net##div.sec.lft:nth-of-type(4)
+uploadking.net#div[class="paybox"]
+uploadking.net###lkaig
+uploadking.net##[src="about:blank"]
+uploadking.net###Prem_days
+uploading.vn##.download-page.py-5.container > p:nth-of-type(1)
+apk4free.net###like-post-wrapper-105810064-553-5ce50f0db3320
+douploads.com###gdpr-cookie-notice
+douploads.com###news_last
+douploads.com##.btn-danger.btn-lg.btn-block.btn
+douploads.com##[href^="http://getalinkandshare.com/r"]
+douploads.com#%#AG_onLoad(function() { setTimeout(function() { document.getElementById("chkIsAdd").checked = false; }, 300); })
+douploads.com#%#AG_onLoad(function() { setTimeout(function() { document.getElementById("chkIsAdd").checked = true; document.getElementById("chkIsAdd").click(); }, 1500); })
+mshare.io##.ads_336
+mshare.io##.info-page, .text-left
+mshare.io##.in.fade.modal-backdrop
+vinaurl.in###link-view > div:nth-child(9)
+upload.ac^$popup
+upload.ac##.text-center.col-md-12.dl-plus
+upload.ac##.visible-xs.text-center.boxa
+upload.ac##.eww
+upload.ac##.resizer
+upload.ac##.__fp-a-show.__fp-br-chrome.__fp-a
+upload.ac##.fmore
+upload.ac##.pt20.col-md-4 > .hidden-xs.text-center.boxa > center
+filescdn.co###glx-10348-container
+userscould.com###glx-10345-container
+xubster.com##.containerplan
+xubster.com##td:nth-of-type(3)
+racaty.com##.col-md-8 > .adsbygoogle
+www96.zippyshare.com###oob6UeEjAJO > div
+www96.zippyshare.com###oob6UeEjAJO > iframe
+www96.zippyshare.com##.center_ad
+douploads.com#%#AG_onLoad(function() { setTimeout(function() { document.getElementById("chkIsAdd").checked = false; }, 300); })
+douploads.com#%#AG_onLoad(function() { setTimeout(function() { document.getElementById("chkIsAdd").checked = true; document.getElementById("chkIsAdd").click(); }, 1500); })
+filefenix.com##.mgbox
+! quy tắc sửa lỗi giao diện cho fstore.biz
+fstore.biz##.file-box
+! FPT Play mobile apps
+.adsplay.
+||ads-cdn.fptplay.net^
+||st.fptplay.net^
+@@||static.fptplay.net^
+||qe.fptplay.net^
+||ua.fptplay.net^
+||log.adsplay.net^
+fptplay.vn##.show-on-small.link-app
+fptplay.vn##.hide-on-small-only.goto-box
+||graph.facebook.com$app=com.fplay.activity
+||pagead2.googlesyndication.com$app=com.fplay.activity
+radar.cedexis.com$app=com.fplay.activity
+! Block Bet Filter List By Phan Nhanh ( Chặn chỉ được phần nào thôi )
+||789.club
+*789.net
+*789.org
+*789.tk
+*789.cc
+*789.xyz
+||11bet.com^$empty
+||11bet.net^$empty
+||11beta.com^$empty
+||388bet.com^$empty
+||cachchoi.net^$empty
+||betting88.co^$empty
+||8live.com^$empty
+||smart.8live.net^$empty
+||9club2.com^$empty
+||9287632.com^$empty
+||9924777.com^$empty
+||bong99.com^$empty
+||bong90.net^$empty
+||betbong365.com^$empty
+||cacuoc24.net^$empty
+||cadouytin.com^$empty
+||cmd368.com^$empty
+||clipbongda.info^$mp4
+||daccuoc247.com^$empty
+||letou868.com^$empty
+||lixi88.com^$empty
+||hl88.vn^$empty
+||keobong88.com^$empty
+||keo8.com^$empty
+||keocopa.com^$empty
+||fb88.com^$empty
+||fun702.com^$empty
+||ms3388.com^$empty
+||m88sut.com^$empty
+||m88.vin^$empty
+||m88v88.com^$empty
+||m88betwin.com^$empty
+||thegioicacuocbongda.com^$empty
+||ibet889.com^$empty
+||sun.win^$empty
+||sun.game^$empty
+||five88.com^$empty
+||fabet.vip^$empty
+||v8.club^$empty
+||w88.com^$empty
+||nhacaiso.com^$empty
+||tylekeo88.com^$empty
+||tylebongda.org^$empty
+||keonhacai.com^$empty
+||keonhacai.org^$empty
+||smsbongda.com^$empty
+||xemkeo.vn^$empty
+||f8-group-zf.zdn.vn
+||tai.go88.com^$empty
+||playv8.com^$empty
+@@||https://tai.go88.com/?utm_source=hentaiz.net&utm_medium=sw_m-floatfooter&utm_campaign=8live
+||tai.go88.com^$redirect=nooptext
+||oppa888.net$^empty
+*88.com^$empty
+*88.vn^$empty>
+*888*.com^empty
+*888*.net^$empty
+*888*.vn^$empty
+*88.net^$empty
+*88.club^$empty
+*bet*.com^$empty
+*bet*.ee^$empty
+*bet*.net^$empty
+*bet*.top^$empty
+*.game
+*.vin
+/antibiotic*|ca do|Casino|188bet|KeoNhaCai|soikeo/$empty,important
+! TV Online
+hplus.com.vn##.snap-content > .social-panel
+! Các Trang WEB PỎN =)))
+avgle.com###player_3x2_container_inner > div:nth-of-type(1)
+avgle.com###adxp
+avgle.com###ps32-container
+avgle.com##.hide-me-please2.row
+avgle.com##.video-banner
+avgle.com###player_3x2_right
+avgle.com###player_3x2_right_outer
+avgle.com##div.alert-danger.alert-dismissable.alert:nth-of-type(16)
+avgle.com##div.alert-danger.alert-dismissable.alert:nth-of-type(17)
+avgle.com###wrapper > .container > div:nth-of-type(3)
+avgle.com##.footer-banner
+||avgle.com^$popup
+alljapanesepass.com##.join-line--big.join-line
+/ht.js?site_
+xemphimsex.pro###text-2
+phimdem.tv##.SC_TBlock
+3xhd.tv###info > div.entry-content.rich-content > center:first-child
+3xhd.tv###content > div.section-box.related-posts:last-child > div.section-content.grid-small:last-child > center:last-child
+3xhd.tv##.float-ck
+phimsd.org###main > div.wrap.cf:first-child > div.float-ck:last-child
+cosplayjav.pl##div.right-box:nth-of-type(8)
+cosplayjav.pl##div.right-box:nth-of-type(4)
+cosplayjav.pl##div.right-box:nth-of-type(5)
+cosplayjav.pl##.banner-top
+cosplayjav.pl##.baner-bottom-section
+ditvl.net###menu-lon
+damvler.com##.float-ck
+damvler.com^$popup
+m.damvler.com^$popup
+damvler.com##center:nth-of-type(2)
+m.damvler.com##center:nth-of-type(2)
+phimsd.org###SC_TBlock_299821
+redwap.me###right_col
+https://ads.exosrv.com/iframe.php?idzone=1640850&size=300x250$domain=porntube.com
+porntube.com##.cppBanner, .hidden-xs-down
+pornhub.com##.middleVideoAdContainer.clearfix.adContainer
+xhamster.com##.traffic-stars
+xhamster.com##.video-view-ads__banner-container
+xhamster.com###tsmiddle
+xvideos.com,xnxx.com###video_82326149.no-rotate.thumb-nat-ad
+xvideos.com,xnxx.com###ad-header-mobile-contener
+xvideos.com,xnxx.com###ad-header-mobile
+xvideos.com,xnxx.com###video-ad
+xvideos.com,xnxx.ckm###ad-footer
+xvideos.com,xnxx.com###ad-footer.ad-support-desktop.ad-footer
+xvideos.com,xnxx.com##.video-ad-support-mobile.video-ad-pos-5.video-ad.thumb-block
+xvideos.com,xnxx.com##[href="http://rpc-php.trafficfactory.biz/"]
+xvideos.com,xnxx.com###video-ad.ad-support-desktop.ad-square.mobile-hide
+xnxx1.net,ditvl.net,sexhayvl.pro##.video-infos > div:nth-of-type(2)
+xxphe.com###_asoE0
+@@||cdn1.simply-porn.com
+simply-cosplay.com##.mt-2.text-center
+simply-cosplay.com##.mb-3.text-center
+simply-cosplay.com##.col-lg-4.col-12 > .text-center
+||util.simply-hentai.com/prod/*
+sexhayvc.com##.a-ds-footer
+sexhayvc.com###SC_TBlock_70355
+sexhayvl.pro##.float-ck
+sexhayvl.pro###colophon > .row
+sexlx.net##center
+sex5.pro##.video-player-area > div:nth-of-type(3)
+sexgai.net##.ads-wrap
+jav321.pro##.footer-menu-container
+javmec.com##.mn-related-container
+javmec.com###footer > div:nth-of-type(1)
+javdragon.com##.mobiletop
+javtsunami.com##.happy-header-mobile
+javtsunami.com##.happy-under-player-mobile
+javtsunami.com###divExoLayerWrappe
+porn.com##.t-zne4
+porn.com##.links, .flex
+pornviet.net##.stx
+phimsex.club##.ads
+phimsex.club##div.off-pc
+phimsex.club###phimclub-f88-catfish-mb
+phimsex.club^$popup
+! Hpjav
+hpjav.tv##.video-boxad
+! Hentaiz block luôn cái background video vì nhìn cái mặt thằng huấn bố láo bỏ mẹ , khi nào để lại hình Aiko-chan thì t mới bỏ chặn nhé :)
+@@|hentaiz.net
+@@|hentaiz.net/wp-admin/admin-ajax.php
+||hentaiz.net/images/aiko.jpg$document,1p
+!hentaiz.net##.text-center > div.container:nth-of-type(2)
+hentaiz.net##footer:nth-child(11)
+hentaiz.net##.visible-mobile
+hentaiz.net###rmcard1 > .d-block.mx-auto > a.sda:nth-of-type(1)
+||hentaiz.net/images/spon/
+hentaiz.net###rmcard
+hentaiz.net##div.container:nth-of-type(3)
+||hentaiz.net/images/aiko.jpg
+||hentaiz.net/superpwa-sw.js$script,1p
+hentaivn.net##.a_d_s_115
+hentaivn.net##.a_d_s_50
+hentaivn.net^#popup
+||hentaivn.net/qx/qx_catfish.php
+||publicsuffix.org/list^
+##[src="https://static.htvncdn.net/qx/qx4_m.php"]
+||static.htvncdn.net/qx/qx4_m.php
+! Đã tắt Dark Mode cho hentaivn
+!hentaivn.net#$#html > body { background: #000000!important; }
+hentaihaven.org,hentaihaven.xxx##.ads
+hentaihaven.org,hentaihaven.xxx###social-menu
+hentaihaven.org,hentaihaven.xxx##.script_manager_video_master
+thiendia.me##.samThreadPostContainerAfteer.samAlignCenterAuto.samBannerUnit
+thiendia.me###adBottom
+thiendia.me##.my_nonresponsive_ads
+thiendia.me##div.section:nth-of-type(2)
+thiendia.me^$popup
+||vlxx.tv^$popup
+vi.hentai-cosplay.com###adsense_header
+vi.hentai-cosplay.com###adsense_center
+vi.hentai-cosplay.com###famhl_bnr
+vi.hentai-cosplay.com###fam_rectp
+vi.hentai-cosplay.com###fam_fam8_hl_dir
+vi.hentai-cosplay.com###iframe_movie_sd_sp_ad
+vi.hentai-cosplay.com,porn-image-xxx.com###fam_affi_ol100_fi
+vi.hentai-cosplay.com###fam_rectp ###gn_interstitial_area
+##[href^="https://media.r18.com"]
+||javhd.pro^$popup
+@@||javhd.pro/ajax.php
+javphim.net##.content > div:nth-of-type(3)
+javmeet.com###M315934ScriptRoot
+javhd.pro,javhd.win,javhd.vc##tabs-movie > .right-box-content > .tabs-movie-ads
+javhd.pro,javhd.win,javhd.vc###main-content > .header-play > .user-action > .movie-ads
+javhd.pro,javhd.win,javhd.vc##.entry-footer-ads
+! jav.sh [ nên thử vào :V ]
+manhwa.club##.body-top-ads.custom-code.c-ads.ad
+nekopoi.care##.custom-html-widget.textwidget
+nekopoi.care##.js_smartbanner.smartbanner--android.smartbanner
+javtc.tv##.info > div:nth-of-type(2)
+! Facebook and Instagram
+||an.facebook.com
+||facebook.com^*/logging/
+||connect.facebook.net^*/fbevents.js$third-party
+||graph.facebook.com^$third-party
+|external.xx.fbcdn.net
+|external.fhph1-2.fna.fbcdn.net
+||scontent.xx.fbcdn.net^$app=com.rhmsoft.edit
+! Hydrax
+||cdn.itphanpytor.club/9$xhr,domain=hydracdn.network
+||o.wowreality.info/api/log/add$domain=play.hydracdn.network
+||xz3jbjki36.buzz^$websocket,domain=play.hydracdn.network
+||cdn.betgorebysson.club/apu.php$script,domain=play.hydracdn.network
+@@||xz3jbjki36.buzz^$websocket,domain=play.hydracdn.network
+! Inapp Block
+||external.fsgn10-1.fna.fbcdn.net^$app=com.licham.lichvannien.lichviet2020
+||graph.facebook.com^$app=com.licham.lichvannien.lichviet2020
+! Cốc Cốc
+||startup.mobile.yandex.net^$app=com.coccoc.trinhduyet
+||report.appmetrica.yandex.net
+||clck.yandex.ru^$app=com.coccoc.trinhduyet
+||cr.browser.coccoc.com^$app=com.coccoc.trinhduyet
+||coccoc.com/webhp
+! Opera Mini
+||news.opera-api.com
+||autoupdate.geo.opera.com
+||news.opera-api.col
+! Uc Browser
+||wpk-auth.ucweb.com
+||api.allnews.uodoo.com^$empty
+||allnews.uodoo.com^$empty
+||doubleclick.net
+@@||special.skin.ucweb.com
+||uclaut.net/1market.php
+||uc.cn
+||blo.uc.cn
+||uc.ck.ads.cn
+||by.uccn.phan.com
+||push.ucweb.lnhanh.cn
+||navicms.ucweb.com^$empty
+||maribacaberita.com
+||ucweb.com
+||u.uc123.com
+||ucfly.com
+||uc.gre
+! Block Taobao
+||accscdn.m.taobao.com
+||taobao.com
+! Google
+||adservice.google.com
+||www.google-analytics.com
+||google-analytics.com
+||googleads.g.doubleclick.net^$app=com.adguard.dns,important
+||googlesyndication.com
+@@||pagead2.googlesyndication.com
+||googletagservices.com
+||www.googletagmanager.com
+||firebaseinappmessaging.googleapis.com
+##masthread-ad
+##video-masthread
+! Zing - Zalo - NCT
+||logv2.mp3.zing.vn
+||log.zingmp3.vn
+||log.api.zaloapp.com
+||nct1.logging.nextsmarty.com
+||log4x.nixcdn.com
+! Chiasenhac
+@@||data.chiasenhac.com
+chiasenhac.vn##.csn-title-favourite
+chiasenhac.vn##.jw-icon-sequence.jw-reset.jw-button-color.jw-icon-inline.csn-random-btn.jw-icon
+chiasenhac.vn##.jw-icon-repeat-not.jw-reset.jw-button-color.jw-icon-inline.csn-repeat-btn.jw-icon
+chiasenhac.vn##.jw-icon-backsong.jw-reset.jw-button-color.jw-icon-inline.jw-icon
+! Chiaseapk
+chiaseapk.com##div.inline-ad:nth-of-type(4)
+chiaseapk.com##div.inline-ad:nth-of-type(6)
+chiaseapk.com##div.inline-ad:nth-of-type(8)
+chiaseapk.com##div.inline-ad:nth-of-type(10)
+chiaseapk.com##div.inline-ad:nth-of-type(12)
+chiaseapk.com##div.inline-ad:nth-of-type(14)
+chiaseapk.com##div.inline-ad:nth-of-type(16)
+chiaseapk.com#@#div.inline-ad:nth-of-type(20)
+chiaseapk.com##.widget-content > .adsbygoogle
+! Pharmacity
+pharmacity.vn###ins-frameless-overlay
+! Y2mate
+y2mate.com###adInstallAndroid
+y2mate.com###ads_spot1
+y2mate.com##.ads-social-box
+y2mate.com##body > iframe
+y2mate.com##.hidden-lg.hidden-md
+!Shopee
+shopee.vn##.home-popup__background
+shopee.vn##.shopee-floating-icon
+@@||cf.shopee.vn
+! sukidesuost.info
+||sukidesuost.info^$popup
+! Tracking
+||aj1010.online
+||analytics.hostyour.video^
+||api4.storeip-shopify.com^
+||api64.ipify.org^$network
+||cd-mod.com^
+||cdn.jsdelivr.net/gh/jokerx000/js/*.js
+||checkip.amazonaws.com
+||hs-analytics.net
+||logger.pw^$app=com.adguard.dns,empty
+||logger.pw
+||alexajstrack.com
+||adjust.com
+||traffichaus.com
+||go.ecotrackings.com
+||mc.yandex.ru
+||mixpanel.com
+||nanda.vn
+||gvt2.com
+.hitstats.
+||tracker.affiliate.iqbroker.com
+||track.tracking^
+||tracking.prd.mz.internal.unity3d.com
+||tracking.fabet.vip
+||track.vivaclix.com
+||track.starmakerstudios.com^
+||trkwl.me
+||log.avlyun.com
+||eyeviewads.com
+||static.contineljs.com
+||selltrafficfor.me
+||sync.fout.jp
+||sync.users-api.com
+||vivaclix.com
+||propeller-tracking.com^
+||pianistrefutationgoose.com
+||meltpiratehamlet.com
+
+! Malware Ads
+||getalinkandshare.com^$empty
+||mob1ledev1ces.com^$empty
+||downfile.site^$urlblock
+||allmygoodlife.com
+||inabsolor.com
+||api.trackpush.com
+||bdv.bidvertiser.com
+||prepenseprepensedefiance.com
+||tapixesa.pro
+||itnuzleafan.com
+||unreshiramor.com
+||e2wysbacctt1.com
+.router.infolinks.
+.clerrrep.
+||checkyofeed.com^$redirect=nooptext
+||meltpiratehamlet.com
+||gatetocontent.com^
+.realtime-bid.
+||whugesto.net^$empty
+! ===Malware Implicit Redirection 
+||refpa.top^$empty 
+||onexr54132.top^$empty 
+! === Malware Script 
+/(https?:\/\/)\w{30,}.me\/\w{30,}\./$script,third-party
+! OPENLOAD [ DIE ]
+@@||1fizorv.oloadcdn.net
+@@||oqfnws.oloadcdn.net
+openload.co###M162831ScriptRootC253504
+||tt1.openload.co
+||tt2.openload.co
+||tt2.oload.stream
+!
+! Pop-up / Push ads
+||dolohen.com^$empty
+||exdynsrv.com^
+|popads.net^$empty
+||popads.net
+||modulepush.com
+$popup,domain=hoihentai.com
+.iwanttodeliver.
+||unreshiramor.com^$popup
+||s.opoxv.com^$empty
+||in-page-push.com^
+||asgclickpop.com^
+||doubleadserve.com
+||illnessspraydeference.com
+||onmarshtompor.com^$empty
+||leonodikeu9sj10.com/get^$domain=hentaivn.net|streamsb.net
+||leonodikeu9sj10.com/ass^$domain=streamsb.net
+||bebreloomr.com
+||littlecdn.com^$image
+!
+! Pinterest
+pinterest.com,pinterest.ru##div[data-test-id="giftWrap"]
+! Color OS
+||ifrus.coloros.com
+! Nếu muốn chặn tải bản cập nhật thì bỏ
+! ||ifota.coloros.com
+!
+||rusfsg.coloros.com
+! Oppo / Realme
+||54.193.2.171$network
+||54.193.2.171^$app=com.coloros.safesdkproxy
+||up.cm.ksmobile.com^$app=com.coloros.safesdkproxy
+||proxyf.apps.oppomobile.com^$app=com.android.calculator2
+||54.193.42.169^$app=com.coloros.safesdkproxy
+||data-sg-ads.realmemobile.com
+||location.apps.oppomobile.com
+||adx-sg.ads.heytapmobi.com
+||stg-data-sg.ads.heytapmobi.com
+! Oppo/Realme App Market
+||dc.foreign.oppomobile.com
+||vn-epoch.realmemobile.com
+||52.76.176.26
+||54.169.78.47
+||52.221.99.8
+||54.255.135.100
+! Redirect ads
+||cagelrib.net^$empty
+||grooksom.com^$empty
+||deloplen.com^$empty
+||deloplen.com^$urlblock
+||osskanger.com^$empty
+||geoip.redirect-ads.com^
+! Other filter
+||mfadsrvr.com
+||mxdcontent.net^$popup
+||ad.mox.tv
+||ads.vidoomy.com^$empty
+||engine.4dsply.com^$empty
+||adsco.re
+||addthis.com
+||adsrvr.org
+||ads.theporndb.com
+||advertising.com
+||adsmetadata.startappservice.com
+||advertising.com^$cookie=NAME;maxAge=1200;sameStie=lax
+||adglare.net^$third-party
+||adtng.com
+||adskeeper.co.uk
+||ambientplatform.vn
+||ahacdn.me
+aminoapps.com##.modal
+||i.adfurikun.jp
+||ads.adxadserv.com^
+||bvadimgs.scdn7.secure.raxcdn.com
+||bidgear.com^$third-party
+||lcdn.runative-syndicate.com/images/*.jpg
+||server.cpmstar.com
+||stunninglover.com
+||data.ero-advertising.com/datanew/banners
+||doublepimpads.com
+||img.fam-ad.com^
+||o333o.com^
+||go.ero-advertising.com^
+||double-clickd.com
+||deliver.ptgncdn.com/cbdec^
+||2mdnsys.com
+||datasaver.googleapis.com
+||exosrv.com^
+||exosrv.com/iframe.php
+||media.exo-dsp.com
+||yomedia.vn
+||histats.com
+||remarketingpixel.com
+||gammaplatform.com
+||tag.gammaplatform.com/adx/request^
+||onstunkyr.com
+||offerimage.com^$~image,~script,~stylesheet
+||proxy.googlezip.net
+||blueseed.tv
+||trafficfactory.biz
+||rtmark.net
+||raxcdn.com
+||scorecardresearch.com
+||sdk-android.ad.smaato.net
+||mobileoffers-ac-download.com
+||vast.youview.io
+||movcpm.com
+||mgid.com
+||inter1ads.com/
+||lingdownsitat.pro
+||androidlost.com#$#html > body { background: #000000!important; }
+||poweredby.jads.co
+! Lọc Spam
+$$img[height="1px"][width="1px"]
+#%#//scriptlet('abort-current-inline-script', 'alert', '/đã bị +virus/')
+#%#//scriptlet('abort-on-property-read', 'navigator.language')
+#%#//scriptlet('disable-newtab-links')
+#%#//scriptlet('prevent-popads-net')
+#%#//scriptlet('remove-class', 'afixed|abanner)
+! Một Số trang tin tức
+msn.com###smartbanner
+msn.com###banner1_article_30e
+msn.com###taboola-mobile-article-thumbnails
+xaluan.com###adheaderholder
+xaluan.com###adendpage
+mainichi.jp##.ad
+mainichi.jp##.article-body > .ad-bnr-w300
+sankei.com##.article-sentence > .ad
+! DS bỏ qua
+@@||cdn.ibispaint.com
+@@||gstatic.com
+@@||connect.facebook.net^
+@@||facebook.com/plugins/comments.*
+@@/ajax/player/
+@@||mir44lo.dood.video
+@@||dood.to
+! E hèm : Đây công sức của tui ngồi mò mã nguồn web rồi dùng Skill Switch Screen và Eyes Flash liên tục để ngồi làm ra cái quy tắc này rồi chia sẻ cho mấy bác dùng miễn phí :D
+! Đề nghị các thanh niên mất dịch đừng chơi xấu sửa credit của tui rồi đi reshare nơi khác nhá , tội chết ạ :
+!
+! Adguard Fast Block
+||toglooman.com^
