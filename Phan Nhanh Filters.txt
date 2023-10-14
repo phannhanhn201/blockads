@@ -921,8 +921,8 @@ javtc.tv##.info > div:nth-of-type(2)
 |external.xx.fbcdn.net
 |external.fhph1-2.fna.fbcdn.net
 ||scontent.xx.fbcdn.net^$app=com.rhmsoft.edit
-||lm.facebook.com$document
-||l.facebook.com$document
+||lm.facebook.com$document,empty
+||l.facebook.com$document,empty
 ! Hydrax
 ||cdn.itphanpytor.club/9$xhr,domain=hydracdn.network
 ||o.wowreality.info/api/log/add$domain=play.hydracdn.network
